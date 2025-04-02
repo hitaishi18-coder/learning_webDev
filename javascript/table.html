@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type ="button" onclick="showTable()">i love you cookie .....</button>
+    </button>
+
+
+    <div id = "table">
+
+    </div>
+    <script>
+       function  showTable() {
+        var table = "<table><thead><tr><th>name</th><th>age</th><th>gender</th></tr><thead>"
+            table+="<tbody> " 
+                for(var i = 0; i<10;i++){
+            table += "<tr><td>"+(i+1)+"</td><td>hitaishi</td><td>22</td><td>female</td></tr>"
+                }
+                for(var j = 0;j<5 ; j++){
+            table+="<tr><td>"+(j+1)+"</td><td>rohaz</td><td>21</td><td>male</td></tr><br>"
+                }
+                table+="</tbody></table>"
+            
+        document.getElementById("table").innerHTML = table;
+    
+}
+    </script>
+</body>
+</html>

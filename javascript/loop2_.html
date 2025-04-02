@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <!-- for loop  -->
+
+    
+    <div id="result">
+        <!-- <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul> -->
+    </div>
+    <hr>
+
+    <div id="resul2">
+
+    </div>
+    <script>
+
+
+
+
+
+var html= "<ul>"
+         
+         for(var i=1 ; i<=10; i++){
+             // if(i==6){             // 5 tk chlega 
+             //     break;
+             // }
+ 
+             if(i==6){              // continue se iteration skip ho jayega 
+                 continue;
+             }
+             html+="<li style='color:blue'>"+ i +"</li><br>"
+             // if(i==6){                // 6 tk chalega .. pehle concat hoga 
+             //     break;
+             // }
+         }
+            html += "</ul>"
+         //    console.log(html);
+ 
+         document.getElementById("result").innerHTML = html
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+         var html2 = "<ul>"
+          
+          for(var i=1 ; i<=100; i++){
+  
+             if(i%2==0){
+                  html2+="<li style='color:purple'>"+ i +"</li><br>"
+             }
+             else {
+                     html2+="<li style='color:yellow'>"+ i +"</li><br>"
+ 
+             }
+         
+              
+          }
+             html2 += "</ul>"
+  
+          document.getElementById("resul2").innerHTML = html2
+ 
+ 
+ 
+
+    </script>
+</body>
+</html>

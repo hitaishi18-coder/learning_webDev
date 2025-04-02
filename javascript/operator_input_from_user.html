@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type ="text" placeholder="enter number 1" id ="num1" autocomplete="off"> <br>
+<input type ="text" placeholder="enter number 2 " id ="num2"autocomplete="off"> <br>
+
+<button type="button" onclick="go()"> + </button>
+
+<button type="button" onclick="go2()"> - </button>
+
+<button type="button" onclick="go3()"> / </button>
+
+<button type="button" onclick="go4()"> % </button>
+
+<p id ="result"></p>
+    <script>
+        function go(){
+            var a =  parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+
+            var result = a + b ;
+            document.getElementById("result").innerText = result ;
+        }
+    
+        function go2(){
+            var a =  parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+
+            var result = a - b ;
+            document.getElementById("result").innerText = result ;
+        }
+    
+
+        function go3(){
+            var a =  parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+
+            var result = a / b ;
+            document.getElementById("result").innerText = result ;
+        }
+    
+        function go4(){
+            var a =  parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+
+            var result = a % b ;
+            document.getElementById("result").innerText = result ;
+        }
+    
+    </script>
+</body>
+</html>

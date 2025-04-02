@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css"/>
+    <style>
+        a{
+            text-decoration: none;
+            color: brown;
+            padding: 0 10px;
+        }
+        a:hover{
+            color: black;
+        }
+        header{
+            position: fixed;
+            padding: 20px;
+            top:0;
+            width: 100%;
+        }
+          
+        header,footer{
+            background-color: #b298f5;
+            text-align: center;
+        }
+        #sidebar{
+            background-color: darkcyan;
+            padding: 20px;
+        }
+        #content{
+            background-color: skyblue;
+            text-align: center;
+        }
+        /* main{
+            display: grid;
+             grid-template-columns : 200px auto  ;
+             grid-gap : 10px;
+        } */
+
+        .grid{
+            display: grid;
+        }
+        .grid-columns-2{
+            grid-template-columns: 500px auto;
+        }
+        .grid-columns-4{
+            background-color: crimson;
+            grid-template-columns: auto auto auto auto ;
+        }
+
+        .grid-columns-3{
+            background-color: grey;
+            grid-template-columns: auto auto auto  ;
+        }
+        
+        p{
+            margin: 0;
+        }
+
+
+        h4{
+            padding-top: 40px;
+        }
+
+
+        h3{
+            padding-top: 60px ;
+        }
+/* 
+
+        #sidebar2{
+            
+            background-color: darkcyan;
+            padding: 20px;
+        } */
+        img{
+            height: 10%;
+            width: 10%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+    <a href="home.html"> home </a>
+    <a href="index.html">index </a>
+    <a href="contact.html" > contact us </a>
+    </header>
+
+    <main class="grid grid-columns-2">
+        <div id="sidebar">
+            <h4>sidebar section </h4>
+            <p>Lorem is aliquam cupiditate ducimus itaque dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dicta?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptate minus tempora placeat excepturi asperiores, ad odio molestiae voluptatum libero nulla natus, voluptas sunt nisi itaque, deserunt accusantium consectetur debitis. Ea aut porro, tenetur corporis eveniet, molestiae perferendis magni ab illo, in quam maiores debitis. Magnam, quia. Expedita dolorem, et doloribus quibusdam obcaecati voluptate ut eaque, quaerat, vel repellendus accusamus odit minima tenetur asperiores? Ipsum, incidunt vitae! Minima obcaecati quasi pariatur in voluptate deserunt ut praesentium? Eius repudiandae, obcaecati aliquid autem esse ea et beatae quibusdam reprehenderit ducimus aut, quae nam. Temporibus culpa reiciendis debitis vero praesentium magnam a molestiae?
+                 Omnis voluptates animi earum perfibus eligendi magnam quae corporis amet est ratione pariatur. Illo, excepturi culpa. Dicta, error quas culpa optio explicabo accusamus vitae quaerat eaque dolores non maiores voluptates fugit. Natus nobis dolorum obcaecati provident delectus architecto aperiam iure repellat, necessitatibus ad recusandae quos velit aliquid rem soluta distinctio temporibus, molestias exercitationem quam debitis nisi nesciunt ipsum. Optio necessitatibus possimus, enim adipisci
+                <span onclick="showpara()" class="readmore">read more ....</span>
+            </p>
+            <p id="hidden-para" style="display: none;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aspernatur repudiandae laboriosam hic. Similique harum atque nesciunt facere laudantium saepe?
+
+            </p>
+        </div>
+
+        <div id="content">
+            <h3>content section</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vero cum, recusandae nihil laborum perferendis cumque dolorem iste dolore aspernatur eaque, sequi iure error. Necessitatibus illo itaque dolores iure quas. Voluptate suscipit totam eos porro magnam quae quas accusamus ea excepturi reprehenderit illum aut, at inventore ipsum ullam? Nobis veniam, repellendus cum, voluptas reprehenderit nesciunt facere tempore autem officia labore, numquam culpa delectus. Nam pariatur neque, delectus tempora culpa alias unde quidem eum deleniti, omnis, sequi sit aliquid hic cupiditate similique itaque excepturi officiis quos dignissimos? Optio, sed ipsa ducimus adipisci neque assumenda eius et dicta quam, rem animi dolore.
+
+            </p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="alt="img">
+
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="alt="img">
+
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="alt="img">
+
+        </div>
+        <!-- <div id="sidebar2">
+            <h4>sidebar section </h4>
+            <p>Lorem is aliquam cupiditate ducimus itaque dolor! Omnis voluptates animi earum perfibus eligendi magnam quae corporis amet est ratione pariatur. Illo, excepturi culpa. Dicta, error quas culpa optio explicabo accusamus vitae quaerat eaque dolores non maiores voluptates fugit. Natus nobis dolorum obcaecati provident delectus architecto aperiam iure repellat, necessitatibus ad recusandae quos velit aliquid rem soluta distinctio temporibus, molestias exercitationem quam debitis nisi nesciunt ipsum. Optio necessitatibus possimus, enim adipisci vel
+
+            </p>
+       
+        </div> -->
+    </main>
+    
+
+    <main class="grid grid-columns-4">
+        <div>
+            <h4>section1 </h4>
+        </div>
+        
+        <div>
+            <h4>section2 </h4>
+        </div>
+        
+        <div>
+            <h4>section3 </h4>
+        </div>
+        
+        <div>
+            <h4>section4 </h4>
+        </div>
+    </main>
+
+    <main class=" grid grid-columns-3">
+        <div>
+            <h1>head one </h1>
+        </div>
+        
+        <div>
+            <h1>head two </h1>
+        </div>
+        
+        <div>
+            <h1>head three </h1>
+        </div>
+    </main>
+
+    <footer class="grid grid-columns-2">
+        <div>
+            <a href="">vmm education | </a>
+        </div>
+        <div>
+            <p>2025</p>
+            
+        </div>
+    </footer>
+    
+
+    <script>
+        function showpara(){
+              document.getElementById("hidden-para").style.display = "block"
+        }
+    </script>
+</body>
+</html>

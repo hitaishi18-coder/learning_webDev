@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- / logical operator  -->
+<!-- 
+    and 
+    or 
+    not  -->
+
+
+    
+    <input type = "text " id = "1" placeholder="enter num 1"> <br><br>
+    <input type = "text"  id = "2" placeholder="enter num 2"> <br><br>
+    <input type = "text " id = "3" placeholder="enter num 3"> <br><br>
+
+    <button type ="button " onclick = "checknum()"> save </button><br>
+
+
+
+<hr>
+<hr>
+
+
+<input type = "text " id = "4" placeholder="enter num 1"> <br><br>
+<input type = "text"  id = "5" placeholder="enter num 2"> <br><br>
+<input type = "text " id = "6" placeholder="enter num 3"> <br><br>
+
+<button type ="button " onclick = "printGreatest()"> save answer </button>
+<p id = "result"></p>
+
+
+<script>
+function checknum() {
+    var num1 = parseInt(document.getElementById("1").value);
+    var num2 = parseInt(document.getElementById("2").value);
+    var num3 = parseInt(document.getElementById("3").value);
+
+
+    var result =  num1>num2  && num1>num3;
+    console.log(result);
+}
+
+
+function printGreatest(){
+    var num1 = parseInt(document.getElementById("4").value);
+    var num2 = parseInt(document.getElementById("5").value);
+    var num3 = parseInt(document.getElementById("6").value);
+
+    if(num1>num2 && num1>num3)
+{
+    document.getElementById("result").innerText = "num1 is greater"
+}  else if(num2>num1 && num2>num3){
+    document.getElementById("result").innerText = "num2 is greatest"
+} else {
+     document.getElementById("result").innerText = "num3 is greatest"
+}
+}
+
+</script>
+</body>
+</html>

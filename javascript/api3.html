@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="readdata()">
+<div id = "result">
+
+    </div>
+
+
+    <script>
+        async function readdata() {
+            var response = await fetch("https://jsonplaceholder.typicode.com/users") // get 
+            if(response.status==200){
+                response=await response.json() // parse
+                console.log(response); 
+            
+                var html = "<table><thead><tr><th>id</th><th>name</th><th>phone</th><th>email</th></tr></thead><tbody>"
+                    for(var user of response){
+                        html+="<tr>"
+                            
+                            html+="<td>" + user.id + "</td>"
+                            
+                            html+="<td>" + user.name + "</td>"
+                            
+                            html+="<td>" + user.phone  + "</td>"
+                            
+                            html+="<td>" + user.email + "</td>"
+                            
+                        html +=  "</tr>"
+                    }
+
+                    html +="</tbody></table>"
+
+                    document.getElementById("result").innerHTML = html;
+              
+            }
+       
+        }
+      
+    
+
+        
+     
+    </script>
+
+
+
+</body>
+</html>

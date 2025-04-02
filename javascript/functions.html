@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hello world ")
+ 
+        // named functions 
+        function addNumbers() {
+            var x = 20;
+            var y = 30;
+
+            var result = x + y ;
+            console.log(result);
+        }
+        addNumbers();
+
+
+        function addNumbers2(a,b) {
+            var result = a + b ;
+            console.log(result );
+        }
+        addNumbers2(50,50);
+
+
+        function addNumbers3 (c,d) {
+            return c+d;
+
+        }
+        var result = addNumbers3(9,6);
+        console.log("result " + result )
+
+
+        // arrow functions
+       var  addnum=()=>{
+        var b = 50; 
+        var c = 40;
+
+        var result = b+c;
+        console.log(result)
+       } 
+       addnum();
+
+
+
+
+
+       var addNum=(v,w)=>{
+        var result = v+w;
+        console.log(result);
+       }
+       addNum(4,6);
+
+
+       var sum=(x,b)=> x+b;
+       var result = sum(400,400)
+       console.log(result);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result">
+        <p> list of fruits </p>
+    </div>
+    <script>
+        var fruits = ["banana","orange","apple","mango"]
+        var html = "<ol>"
+        for(var i of fruits){
+            
+            html+="<li>" + i + "</li>"
+            }
+        html+="</ol>"
+
+            document.getElementById("result").innerHTML = html;
+
+
+            //ARRAY 2 
+            // separate array from another array 
+
+            // flat 
+            var fruits2=["banana","orange",["apple","mango"]];
+            console.log(fruits2)
+
+            console.log(fruits2.flat())
+
+
+            console.log(fruits2.flat0)
+
+    </script>
+</body>
+</html>

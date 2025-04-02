@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id = "result"></div>
+
+
+
+
+    <script>
+       var user = 
+        [
+            {
+            fullname : "john doe ",
+            age : 24,
+            gender: "male",
+            course : "btech"
+            },
+            
+            {
+            fullname : "hitaishi lohtia ",
+            age : 24,
+            gender: "female",
+            course : "btech"
+            },
+            
+            {
+            fullname : "lovish lohtia ",
+            age : 24,
+            gender: "male",
+            course : "btech"
+            },
+            
+            {
+            fullname : "disha lohtia ",
+            age : 24,
+            gender: "female",
+            course : "btech"
+            },
+        ]
+        console.log(user)
+        console.log(user.length)
+
+
+        console.log("............")
+        // using loop 
+        for( var i of user){
+            console.log(i)
+
+        }
+
+
+
+
+        // show object data in form of table 
+
+        var html = "<table><thead><tr><th>fullname</th><th>age</th><th>gender</th><th>course</th></tr></thead><tbody>"
+
+
+            for(var i of user){
+                console.log(i.fullname , i.age , i.gender , i.course)
+                html+= "<tr>"
+                    html +="<td>" + i.fullname + "</td>"
+                    html +="<td>" + i.age + "</td>"
+                    html +="<td>" + i.gender + "</td>"
+                    html +="<td>" + i.course + "</td>"
+                html+="</tr>"
+            }
+
+            html += "</tbody></table>"
+
+            document.getElementById("result").innerHTML = html;
+
+
+
+
+
+
+    </script>
+</body>
+</html>

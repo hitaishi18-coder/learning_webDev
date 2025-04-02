@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body onload="showdata()">
+        <div id="result">
+
+        </div>
+        <script>
+            async function showdata() {
+                var response = await fetch("https://jsonplaceholder.typicode.com/posts")
+                
+                    response = await response.json();
+                    console.log(response)       
+                 var html = "<div>"
+                        for(var user of response ){
+
+                            html +=   "<h5> "+ "userId :-"+ user.userId +"</h5>"
+                             html +=   "<h3> "+ "Id :-"+ user.id +"</h3>"
+                               html += "<p> " +"<b> title:-</b>"+ user.title +"</p>"
+                                html += "<small> " + "<b> body:-</b>" +user.body +"</small>"
+                    
+                        html += "</div>"
+                    
+
+                    document.getElementById("result").innerHTML = html; 
+                    }
+
+                    
+              }
+                
+            
+        </script>
+</body>
+</html>

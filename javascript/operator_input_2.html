@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "text " id = "1" placeholder="enter num 1">
+    <input type = "text"  id = "2" placeholder="enter num 2">
+
+
+
+    <button type ="button" onclick="go('add')"> + </button><br> 
+    <button type ="button" onclick="go('sub')"> - </button><br>
+    <button type ="button" onclick="go('mul')"> * </button><br>
+<hr>
+<hr>
+
+    <button type ="text " onclick ="displayNumber(1) " > 1</button>
+    <button type ="text " onclick ="displayNumber(2) " >2 </button>
+    <button type ="text " onclick ="displayNumber(3) " > 3</button>
+<p id ="result"></p>
+    <script>
+
+
+
+          function displayNumber(num){
+            var currentValue = document.getElementById("1").value //get
+            currentValue+=num   // current value = current value + num ....concat
+            console.log(currentValue);
+            document.getElementById("1").value = currentValue;// set 
+           
+          }
+        function go(action ) {
+            var num1 = parseInt(document.getElementById("1").value);
+            var num2 = parseInt(document.getElementById("2").value);
+
+            if(action == 'add'){
+                var result = num1 + num2;
+                document.getElementById("result").innerText=result;
+            }
+            else if(action == 'sub'){
+                var result = num1 - num2;
+                document.getElementById("result").innerText=result;
+            }
+            else {
+                var result = num1 *  num2;
+                document.getElementById("result").innerText=result;
+            }
+            }
+            
+    
+    </script>
+</body>
+</html>

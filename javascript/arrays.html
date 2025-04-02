@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ARRAY 1 
+        var names = ["pratham","kanish" , "suraj" , "kartik"];
+        console.log(names);
+
+        console.log(names.length);
+
+
+        console.log(names[names.length-1]);  // last index wala print hoga 
+
+        // array using loops    ......... for loop
+
+        for (var i=0;i<names.length-1;i++){
+            console.log(names[i])
+        }
+
+        console.log("....................")
+        // for of looop
+        for(var i of names){
+            console.log(i)
+        }
+
+        console.log(".............");
+
+        // for each loop 
+        names.forEach((i) => {
+            console.log(i)
+        });
+
+        console.log(".............");
+
+        // defined and undefined elements in array 
+        console.log(names[40]);           //  undefined 
+
+        console.log(!names[50])           //  true 
+
+        console.log(names[2]);
+
+
+        console.log("...............");
+        // code for defined and undefined
+        var index = 2;       
+        if(!names[index]){
+            console.log("invalid");
+        } 
+        else{
+            console.log(names[index]);
+        }
+
+        console.log("............");
+
+
+
+
+
+
+
+
+
+
+        // ARRAY 2 
+        // push / append  ....... add element in last
+        var ch = ["a","b","c","d"];
+        console.log(ch)
+
+        ch.push("xyz");
+        console.log(ch);
+
+        console.log("..........");
+        // unshift  ............. add element in first
+        ch.unshift("hitaishi");
+        console.log(ch)
+
+        console.log(".........");
+        //pop ......remove from last 
+        ch.pop()  // remove 1 element 
+        console.log(ch);
+
+        ch.pop()  // by writing second time it remove 2 element 
+        console.log(ch)
+
+        console.log(".........");
+        // shift .....remove from starting 
+        ch.shift()
+        console.log(ch);
+
+
+
+
+
+        // ARRAY 3 
+
+        // splice .... for adding index to index 
+        //for adding 
+        var fruits = ["banana " , "orange" , "apple "]
+
+        fruits.splice(1,0 , "lemon" ,"kiwi")
+
+        console.log(fruits);
+
+
+
+        // remove 
+
+        fruits.splice(1,2)
+        console.log(fruits);
+
+        fruits.splice(1)
+        console.log(fruits);
+    </script>
+</body>
+</html>
