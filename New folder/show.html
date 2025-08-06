@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show data </title>
+</head>
+<body>  
+    <h2> show data </h2>
+    <div id="showData"> 
+        <p> here is the data </p>
+
+    </div>
+  <button class="btn btn-primary" onclick="goback()"> go to previous page  </button>
+
+    <script>
+        let data= localStorage.getItem("formData");  // get data from local stroage .. 
+
+        let dataparsed = JSON.parse(data);           // convert json data back to string ..
+
+        let display = document.getElementById("showData")
+
+        if(dataparsed) {
+
+
+            display.innerHTML = ` <p>Email: ${dataparsed.email}</p> <p>Text: ${dataparsed.text}</p>`;
+
+            // display.innerHTML =  "<p>emailL: ${`dataparsed.email`}  </p>" + "<p>text: ${`dataparsed.text`}  </p>"; // wrong 
+        }
+        
+        
+        function goback() {
+         window.location.href = "index.html";
+             }
+
+    </script>
+</body>
+</html>
